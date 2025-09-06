@@ -14,7 +14,6 @@ export default function Home() {
       {loaded && (
         <>
           <Hero />
-          <div className="h-dvh"></div>
         </>
       )}
     </>

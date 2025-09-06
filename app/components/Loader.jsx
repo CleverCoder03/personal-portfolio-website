@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import gsap from 'gsap';
+import { useState, useEffect } from "react";
+import gsap from "gsap";
 
 export default function Loader({ onFinish }) {
   const [progress, setProgress] = useState(0);
@@ -9,14 +9,13 @@ export default function Loader({ onFinish }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => {
-        const next = prev + Math.random() * 25; // simulate progress
+        const next = prev + Math.random() * 20; // simulate progress
         return next >= 100 ? 100 : next;
       });
     }, 200);
 
     if (progress >= 100) {
       clearInterval(interval);
-
       gsap.to('.loader-wrapper', {
         yPercent: -100,
         duration: 0.8,
@@ -29,8 +28,14 @@ export default function Loader({ onFinish }) {
   }, [progress, onFinish]);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black text-white z-[9999] loader-wrapper">
-      <span className="text-4xl font-bold">{Math.floor(progress)}%</span>
+    <div className="fixed inset-0 py-14 px-8 md:py-18 md:px-14 bg-black text-white z-[9999] loader-wrapper">
+      <div className="uppercase font-ppneune-medium text-3xl w-3 md:w-2xl md:text-4xl">
+        <h1>VISHAL MISHRA</h1>
+        <h1>portfolio &copy;2025</h1>
+      </div>
+      <div className="absolute bottom-0 right-0 py-14 px-8 md:py-18 md:px-14">
+        <span className="text-4xl md:text-5xl font-bold">{Math.floor(progress)}%</span>
+      </div>
     </div>
   );
 }

@@ -20,9 +20,9 @@ const Hero = () => {
 
     })
   return (
-    <main id="title" className="flex flex-col items-center justify-center min-h-screen bg-white text-black">
+    <main id="title" className="flex flex-col items-center justify-center min-h-screen text-black">
       <h1 className="text-5xl font-bold">🚀 My Portfolio</h1>
-      <p className="mt-8 text-lg font-semibold ">yooo! lets go b*tch, launching soon.🔥🔥</p>
+      <p className="mt-8 text-lg font-semibold ">yooo! letssss goooooo, launching soon.🔥🔥</p>
     </main>
   );
 };

@@ -25,6 +25,6 @@ const Hero = () => {
       <p className="mt-8 text-lg font-semibold ">yooo! letssss goooooo, launching soon.🔥🔥</p>
     </main>
   );
-};
+}; 
 
 export default Hero;

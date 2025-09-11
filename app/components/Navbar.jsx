@@ -112,7 +112,7 @@ const Navbar = () => {
   }, [toggle]);
   return (
     <>
-      <nav className="fixed w-full z-[101] md:z-1 mix-blend-difference py-7 px-5 md:py-6 md:px-12 lg:py-10 lg:px-18">
+      <nav className="fixed w-full z-[101] md:z-1 mix-blend-difference py-7 px-5 md:py-6 md:px-12 lg:py-10 xl:px-18">
         <div className="flex items-center justify-between w-full">
           <Link
             href={"/"}

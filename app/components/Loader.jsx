@@ -34,7 +34,7 @@ export default function Loader({ onFinish }) {
         <h1>portfolio &copy;2025</h1>
       </div>
       <div className="absolute bottom-0 right-0 py-14 px-8 md:py-18 md:px-14">
-        <span className="text-4xl md:text-5xl font-bold">{Math.floor(progress)}%</span>
+        <span className="text-4xl md:text-5xl lg:text-6xl font-bold">{Math.floor(progress)}%</span>
       </div>
     </div>
   );

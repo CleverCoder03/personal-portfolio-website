@@ -8,15 +8,15 @@ const Footer = () => {
           <h1>Creative Developer</h1>
         </div>
         <div className="mt-5 lg:mt-0">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/clever-coder/" target="_blank" rel="noopener noreferrer">
             Linkedin,
           </a>
           &nbsp;
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/CleverCoder03" target="_blank" rel="noopener noreferrer">
             Github,
           </a>
           &nbsp;
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/+917249084224" target="_blank" rel="noopener noreferrer">
             Whatsapp
           </a>
         </div>

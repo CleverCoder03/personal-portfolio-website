@@ -1,0 +1,40 @@
+import React from 'react'
+
+const Footer = () => {
+  return (
+    <section className="mt-32 text-xl font-ppneune-medium leading-[1.1] lg:flex lg:justify-between lg:items-end lg:mt-[12rem] lg:mb-[3rem]">
+        <div>
+          <h1>Vishal Mishra</h1>
+          <h1>Creative Developer</h1>
+        </div>
+        <div className="mt-5 lg:mt-0">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            Linkedin,
+          </a>
+          &nbsp;
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            Github,
+          </a>
+          &nbsp;
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            Whatsapp
+          </a>
+        </div>
+        <div className="mt-10 mb-5 lg:mt-0 lg:mb-0">
+          <h1>Development Vishal Mishra</h1>
+          <h1>
+            Inspiration{" "}
+            <a
+              href="https://www.richardekwonye.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Richard Ekwonye
+            </a>
+          </h1>
+        </div>
+      </section>
+  )
+}
+
+export default Footer

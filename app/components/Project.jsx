@@ -23,7 +23,7 @@ const Project = () => {
         {projects.map((project) => (
           <div key={project.id} className="lg:flex lg:items-start lg:mt-20">
             <div className="mt-25 lg:w-1/2 lg:mt-0 sticky top-20 lg:top-25">
-              <h1 className="uppercase font-ppneune-medium text-[11.2dvw] leading-[1.15] lg:text-[9dvw] lg:leading-[7.8dvw] underline underline-offset-6 decoration-4 w-50">
+              <h1 className="uppercase font-ppneune-medium text-[11.2dvw] leading-[1.15] lg:text-[9dvw] lg:leading-[7.8dvw] underline underline-offset-6 decoration-4 lg:decoration-6 w-50">
                 <a
                   href={project.href}
                   target="_blank"

@@ -48,13 +48,28 @@ const Hero = () => {
       <About1 />
 
       {/* PROJECT SECTION */}
-      <Project />
+      <section className="mt-52">
+        <div className="text-xl font-ppneune-medium flex gap-30">
+          <h1>02/</h1>
+          <h1 className="w-20 uppercase">Recent Projects</h1>
+        </div>
+        <Project />
+      </section>
 
       {/* ABOUT SECTION PART-2 */}
       <About2 />
 
       {/* CONTACT Section */}
-      <Contact />
+      <section className="mt-48">
+        <div className="text-xl font-ppneune-medium flex gap-30 lg:justify-between">
+          <h1>04/</h1>
+          <h1 className="w-40 uppercase">want to work together?</h1>
+          <h1 className="uppercase hidden lg:block lg:w-30">
+            Send me a message
+          </h1>
+        </div>
+        <Contact />
+      </section>
 
       {/* FOOTER Section */}
       <Footer />

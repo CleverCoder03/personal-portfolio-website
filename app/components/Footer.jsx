@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({classname}) => {
   return (
-    <section className="mt-32 text-xl font-ppneune-medium leading-[1.1] lg:flex lg:justify-between lg:items-end lg:mt-[12rem] lg:mb-[3rem]">
+    <section className={`mt-32 text-xl font-ppneune-medium leading-[1.1] lg:flex lg:justify-between lg:items-end lg:mt-[12rem] lg:mb-[3rem] ${classname}`}>
         <div>
           <h1>Vishal Mishra</h1>
           <h1>Creative Developer</h1>

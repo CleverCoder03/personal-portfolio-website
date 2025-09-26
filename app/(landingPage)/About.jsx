@@ -45,7 +45,7 @@ const About = () => {
               Each project is an opportunity to learn new concepts across
               multiple domains including arts, maths and physics.
             </p>
-            <div className="relative w-90 lg:w-full h-[50vh] overflow-hidden mix-blend-luminosity my-8 lg:my-15">
+            <div className="relative w-full sm:w-95 lg:w-full h-[50vh] overflow-hidden mix-blend-luminosity my-8 lg:my-15">
                 <Image className="object-cover object-top align-middle scale-125" src="/about-profile-og.png" alt="about-profile" fill />
             </div>
           </div>

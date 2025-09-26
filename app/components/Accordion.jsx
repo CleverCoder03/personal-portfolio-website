@@ -1,108 +1,83 @@
-// components/ServicesAccordion.jsx
-
 "use client";
 
-import React, { useState, useRef, useLayoutEffect } from 'react';
-import { gsap } from 'gsap';
+import { useState } from "react";
+import { servicesData } from "../constant";
 
-// 1. Define your services data
-const servicesData = [
-  {
-    id: 1,
-    title: "Front end development / engineering",
-    description: "I plan, design, build, test and maintain scalable front end web applications."
-  },
-  {
-    id: 2,
-    title: "Interaction design / animation",
-    description: "I specialize in creating fluid and engaging user experiences with meaningful animations and micro-interactions."
-  },
-  {
-    id: 3,
-    title: "Creative implementation",
-    description: "Bridging the gap between static design and a living product. I bring creative visions to life with pixel-perfect attention to detail."
-  }
-];
+const Accordion = () => {
+  // State to keep track of the currently open accordion item's ID.
+  // We initialize it to null, so all items are closed by default.
+  const [openId, setOpenId] = useState(null);
 
-// 2. Create the main Accordion component
-export default function ServicesAccordion() {
-  // State to keep track of the currently open item.
-  // We default to '1' (the ID of the first item) to have it open by default, like your image.
-  const [openId, setOpenId] = useState(servicesData[0].id);
-
+  // This function handles the click event on an accordion item.
   const handleToggle = (id) => {
-    // Set the new openId. If it's already open, close it (set to null).
+    // If the clicked item is already open, close it by setting state to null.
+    // Otherwise, set the state to the ID of the clicked item.
     setOpenId(openId === id ? null : id);
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto px-4 py-12 bg-gray-100 text-black">
-      {/* You can change bg-gray-100 to match your site's background */}
-      
-      <h1 className="text-6xl md:text-8xl font-sans font-bold mb-6 tracking-tighter">
-        SERVICES
-      </h1>
-      
-      <div className="border-t border-black">
-        {servicesData.map((item) => (
-          <AccordionItem
-            key={item.id}
-            item={item}
-            isOpen={openId === item.id}
-            onToggle={() => handleToggle(item.id)}
-          />
-        ))}
+    <section className="mt-30">
+      <div className="text-xl font-ppneune-medium lg:flex">
+        <h1>02/</h1>
+        <h1 className="mt-8 lg:mt-0 uppercase font-ppneune-medium text-[11.2dvw] leading-[9.8dvw] lg:text-[9dvw] lg:leading-[7.8dvw] lg:ml-[12vw]">
+          Services
+        </h1>
+      </div>
+
+      <div className="border-t border-black mt-12 text-xl font-ppneune-medium lg:ml-[14vw] lg:mt-30">
+        {servicesData.map((item) => {
+          // Check if the current item is the one that's open
+          const isOpen = item.id === openId;
+
+          return (
+            <div
+              key={item.id}
+              className="py-8 lg:py-12 border-b border-black cursor-pointer"
+              onClick={() => handleToggle(item.id)}
+              aria-expanded={isOpen}
+              aria-controls={`accordion-content-${item.id}`}
+            >
+              <div>
+                <div className="flex justify-between ">
+                  <div className="flex">
+                    <div className="hidden lg:block">{`0${item.id}`}</div>
+                    <div className="lg:ml-[14vw]">
+                      <h1>{item.title}</h1>
+                      <div
+                        id={`accordion-content-${item.id}`}
+                        className={`grid transition-all duration-500 ease-in-out ${
+                          isOpen
+                            ? "grid-rows-[1fr] opacity-100"
+                            : "grid-rows-[0fr] opacity-0"
+                        }`}
+                      >
+                        <div className="overflow-hidden">
+                          <p className="pt-5 lg:py-10 text-black lg:w-120">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Plus/Minus Icon */}
+                  <div className="relative w-5 h-5 flex-shrink-0">
+                    {/* Horizontal line (always visible) */}
+                    <div className="w-full border h-px bg-black absolute top-1/2 -translate-y-1/2"></div>
+                    {/* Vertical line (rotates to become horizontal, forming a minus sign) */}
+                    <div
+                      className={`h-full border w-px bg-black absolute left-1/2 -translate-x-1/2 transition-transform duration-300 ease-in-out ${
+                        isOpen ? "rotate-90" : "rotate-0"
+                      }`}
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
-}
+};
 
-// 3. Create the individual AccordionItem component
-function AccordionItem({ item, isOpen, onToggle }) {
-  const contentRef = useRef(null);
-
-  // useLayoutEffect is preferred for animations that measure/mutate the DOM
-  // It runs synchronously after all DOM mutations but before the browser paints.
-  useLayoutEffect(() => {
-    // Animate the height
-    gsap.to(contentRef.current, {
-      height: isOpen ? "auto" : 0,
-      duration: 0.5,
-      ease: "power3.inOut",
-      // We also animate padding for a cleaner look
-      paddingTop: isOpen ? "1rem" : "0rem", // Corresponds to pt-4
-      paddingBottom: isOpen ? "1.5rem" : "0rem" // Corresponds to pb-6
-    });
-  }, [isOpen]);
-
-  return (
-    <div className="border-b border-black">
-      {/* Header / Trigger */}
-      <button
-        onClick={onToggle}
-        className="flex justify-between items-center w-full py-6 text-left"
-        aria-expanded={isOpen}
-      >
-        <span className="text-2xl md:text-3xl font-sans">
-          {item.title}
-        </span>
-        <span className="text-3xl md:text-4xl font-light">
-          {isOpen ? '—' : '+'}
-        </span>
-      </button>
-
-      {/* Content */}
-      <div
-        ref={contentRef}
-        className="overflow-hidden text-lg font-sans"
-        // Set initial state without animation for the default open item
-        style={{ height: isOpen ? 'auto' : 0, paddingTop: 0, paddingBottom: 0 }}
-      >
-        {/* The content itself */}
-        <p>
-          {item.description}
-        </p>
-      </div>
-    </div>
-  );
-}
+export default Accordion;

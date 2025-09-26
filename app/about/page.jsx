@@ -3,6 +3,7 @@ import About from "../(landingPage)/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
+import ServicesAccordion from "../components/Accordion";
 
 const AboutPage = () => {
   return (
@@ -19,6 +20,7 @@ const AboutPage = () => {
         </div>
       </div>
       <About />
+      <ServicesAccordion/>
       <section className="mt-52">
         <div className="text-xl font-ppneune-medium flex gap-30">
           <h1>04/</h1>

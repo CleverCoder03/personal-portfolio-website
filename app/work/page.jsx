@@ -26,12 +26,12 @@ const WorkPage = () => {
       <div className="lg:flex lg:items-start lg:mt-20">
         <div className="mt-25 lg:w-1/2 lg:mt-0 sticky top-20 lg:top-25">
           <h1 className="uppercase font-ppneune-medium text-[11.2dvw] leading-[1.15] lg:text-[9dvw] lg:leading-[7.8dvw] underline underline-offset-6 decoration-4 lg:decoration-6 w-50">
-            <a href="https://senpai.web.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://the-og-labs.vercel.app/" target="_blank" rel="noopener noreferrer">
               The OG Labs
             </a>
           </h1>
           <p className="w-80 uppercase text-xl font-ppneune-medium my-10">
-            A portfolio website i made for practice
+            A portfolio web-app for a pune based digital agency
           </p>
         </div>
 
@@ -39,7 +39,7 @@ const WorkPage = () => {
           <a href="https://senpai.web.app" target="_blank" rel="noopener noreferrer">
             <div className="relative w-full h-[45dvh] lg:h-[100dvh]">
               <Image
-                src="/zodius-cover.jpg"
+                src="/og-labs-cover.jpg"
                 alt="zodius-cover"
                 className="object-cover"
                 fill

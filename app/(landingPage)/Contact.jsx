@@ -1,7 +1,7 @@
 const links = [
-  { id: 1, label: "Linkedin", href: "" },
-  { id: 2, label: "Github", href: "" },
-  { id: 3, label: "Whatsapp", href: "" },
+  { id: 1, label: "Linkedin", href: "https://www.linkedin.com/in/clever-coder/" },
+  { id: 2, label: "Github", href: "https://github.com/CleverCoder03" },
+  { id: 3, label: "Whatsapp", href: "https://wa.me/+917249084224" },
 ];
 
 const Contact = () => {
@@ -12,7 +12,7 @@ const Contact = () => {
           <h2 className="text-xl font-ppneune-medium uppercase">
             Send me a message
           </h2>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:clevercoder0307@gmail.com" target="_blank" rel="noopener noreferrer">
             <h1
               className={`uppercase font-ppneune-medium text-[11.2dvw] leading-[1.18] lg:text-[9dvw] lg:leading-[1] underline underline-offset-6 decoration-3 lg:decoration-6 w-[60vw] lg:w-[100vw]`}
             >

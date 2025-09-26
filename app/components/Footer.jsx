@@ -21,8 +21,9 @@ const Footer = ({classname}) => {
           </a>
         </div>
         <div className="mt-10 mb-5 lg:mt-0 lg:mb-0">
-          <h1>Development Vishal Mishra</h1>
-          <h1>
+          <h1>Development By</h1>
+          <h1>Vishal Mishra</h1>
+          {/* <h1>
             Inspiration{" "}
             <a
               href="https://www.richardekwonye.com/"
@@ -31,7 +32,7 @@ const Footer = ({classname}) => {
             >
               Richard Ekwonye
             </a>
-          </h1>
+          </h1> */}
         </div>
       </section>
   )

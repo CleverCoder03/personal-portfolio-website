@@ -6,14 +6,14 @@ const projects = [
     imgSrc: "/zodius-cover.jpg",
     href: "https://zodius.vercel.app",
     name: "Zodius",
-    desc: "A gaming like website with gsap creative web animation",
+    desc: "A web-app designed for gaming portfolio with loads of animation.",
   },
   {
     id: 2,
     imgSrc: "/vector-cover.jpg",
     href: "https://vector-mojo.vercel.app",
     name: "Vector Mojo",
-    desc: "A cockktail website with gsap creative web animation",
+    desc: "A web-app designed for introducing different drinks with cool animation.",
   },
 ];
 

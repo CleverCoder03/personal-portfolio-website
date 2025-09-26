@@ -37,9 +37,8 @@ const About = () => {
           <div className="lg:w-[22vw]">
             <p className="mt-12 lg:mt-0">
               I'm a creative developer with years of experience in building
-              products and appealing web experiences. I've collaborated with
-              individuals and teams to build experiences for SMEs and large
-              enterprises including Wise, Google, Interswitch and Intelia.
+              websites and appealing web-app experiences. I've collaborated with
+              individuals and agencies to build experiences for their clients.
             </p>
             <p className="mt-8 lg:mt-10">
               Each project is an opportunity to learn new concepts across

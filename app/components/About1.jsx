@@ -21,7 +21,7 @@ const About1 = () => {
                <div className="mt-9">
                  <p className="text-3xl uppercase font-ppneune-medium">
                    When I'm not building or exploring new web experiences, I'm
-                   probably playing games or watching football.
+                   probably playing games or watching anime.
                  </p>
                </div>
              </div>
@@ -32,14 +32,10 @@ const About1 = () => {
                </p>
                <div className="lg:w-1/2 lg:pr-10">
                  <p className="mt-12 text-xl font-ppneune-medium ">
-                   With a background in design, I work closely with design focused
-                   teams to build websites and microsites for companies and
-                   individuals. I have years of experience working and
-                   collaborating on product teams and leading engineering efforts.
+                   With a background in web development and IT, I work with design-focused teams to build responsive modern web-apps and microsites for businesses and individuals that balance aesthetics with usability. My projects span both client work and academic work, giving me hands-on experience in real-world product development.
                  </p>
                  <p className="mt-8 text-xl font-ppneune-medium">
-                   With my experience in UI and product engineering, I solve
-                   product problems and build appealing usable web experiences.
+                   With my experience in freelance web development, I specialize in creating responsive, scalable, and user-friendly web experiences that solve product challenges while keeping design at the core.
                  </p>
                  <Link href={"/about"}>
                    <p className="mt-8 text-xl font-ppneune-medium underline underline-offset-[30px] decoration-1">

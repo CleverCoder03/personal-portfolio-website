@@ -23,7 +23,7 @@ const AboutPage = () => {
       <ServicesAccordion/>
       <section className="mt-52">
         <div className="text-xl font-ppneune-medium flex gap-30">
-          <h1>04/</h1>
+          <h1>03/</h1>
           <h1 className="w-20 uppercase">Recent Projects</h1>
         </div>
         <div className="lg:flex lg:items-start lg:mt-20">
@@ -62,7 +62,7 @@ const AboutPage = () => {
       </section>
       <section className="mt-48">
         <div className="text-xl font-ppneune-medium flex gap-30 lg:justify-between lg:mr-[20vw]">
-          <h1>05/</h1>
+          <h1>04/</h1>
           <h1 className="w-40 uppercase">want to work together?</h1>
           <h1 className="uppercase hidden lg:block lg:w-30">
             Send me a message

@@ -60,7 +60,7 @@ const Hero = () => {
       <About2 />
 
       {/* CONTACT Section */}
-      <section className="mt-48">
+      <section className="mt-48 lg:mt-58">
         <div className="text-xl font-ppneune-medium flex gap-30 lg:justify-between lg:mr-[20vw]">
           <h1>04/</h1>
           <h1 className="w-40 uppercase">want to work together?</h1>

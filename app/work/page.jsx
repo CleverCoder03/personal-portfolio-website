@@ -36,7 +36,7 @@ const WorkPage = () => {
         </div>
 
         <div className="lg:w-1/2">
-          <a href="https://senpai.web.app" target="_blank" rel="noopener noreferrer">
+          <a href="https://the-og-labs.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div className="relative w-full h-[45dvh] lg:h-[100dvh]">
               <Image
                 src="/og-labs-cover.jpg"

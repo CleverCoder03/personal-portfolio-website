@@ -41,3 +41,23 @@ body {
   --font-ppneune-semibolditalic: "ppneune-semibolditalic", "sans-serif";
   --font-ppneune-thin: "ppneune-thin", "sans-serif";
 }
+
+html.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

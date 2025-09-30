@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { servicesData } from "../constant";
+import CharReveal from "./CharReveal";
 
 const Accordion = () => {
   // State to keep track of the currently open accordion item's ID.
@@ -19,9 +20,11 @@ const Accordion = () => {
     <section className="mt-30">
       <div className="text-xl font-ppneune-medium lg:flex">
         <h1>02/</h1>
-        <h1 className="mt-8 lg:mt-0 uppercase font-ppneune-medium text-[11.2dvw] leading-[9.8dvw] lg:text-[9dvw] lg:leading-[7.8dvw] lg:ml-[12vw]">
+        <CharReveal delay={1.5}>
+          <h1 className="mt-8 lg:mt-0 uppercase font-ppneune-medium text-[11.2dvw] leading-[9.8dvw] lg:text-[9dvw] lg:leading-[7.8dvw] lg:ml-[12vw]">
           Services
         </h1>
+        </CharReveal>
       </div>
 
       <div className="border-t border-black mt-12 text-xl font-ppneune-medium lg:ml-[14vw] lg:mt-30">

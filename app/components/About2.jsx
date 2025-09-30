@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import CharReveal from "./CharReveal";
+import Copy from "./Copy";
 
 const About2 = () => {
   return (
@@ -12,18 +14,22 @@ const About2 = () => {
       <div>
         <div className="mt-15 lg:mt-0">
           <div className="uppercase font-ppneune-medium text-[11.2dvw] leading-[9.8dvw] lg:text-[8dvw] lg:leading-[7.8dvw] flex flex-col gap-2">
-            <h1>Learning,</h1>
+            <CharReveal>
+              <h1>Learning,</h1>
             <h1>Exploring,</h1>
             <h1>gaming,</h1>
             <h1>music.</h1>
+            </CharReveal>
           </div>
         </div>
 
         <div className="w-full lg:flex lg:justify-between lg:items-end">
           <div className="mt-12">
-            <p className="w-[75vw] lg:w-[25vw] text-xl font-ppneune-medium">
+            <Copy>
+              <p className="w-[75vw] lg:w-[25vw] text-xl font-ppneune-medium">
               My hobbies take up a good portion of my leisure time. I spend it exploring new technologies, reading psychological articles and books, or delving into deep concepts of science, mythology, and astronomy.
             </p>
+            </Copy>
           </div>
 
           <div className="mt-12">

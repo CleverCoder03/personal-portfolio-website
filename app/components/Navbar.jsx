@@ -13,6 +13,7 @@ const Navbar = () => {
   const logoRef = useRef(null);
   const navLinksRef = useRef([]);
   const navBasedRef = useRef();
+  const navRef = useRef();
 
   const navLinks = [
     { name: "Home", link: "/" },
@@ -109,10 +110,22 @@ const Navbar = () => {
         { yPercent: 100, opacity: 0, duration: 0.4, ease: "expo.out" }
       );
     }
+
+    // gsap.fromTo(
+    //   navRef.current,
+    //   {
+    //     yPercent: -100,
+    //     opacity: 0
+    //   },
+    //   { yPercent: 0, opacity: 1, duration: 1, delay: 2, ease: "power3.in" }
+    // );
   }, [toggle]);
   return (
     <>
-      <nav className="fixed w-full z-[101] md:z-1 mix-blend-difference py-7 px-5 md:py-6 md:px-12 lg:py-10 xl:px-18">
+      <nav
+        ref={navRef}
+        className="fixed w-full z-[101] md:z-1 mix-blend-difference py-7 px-5 md:py-6 md:px-12 lg:py-10 xl:px-18"
+      >
         <div className="flex items-center justify-between w-full">
           <Link
             href={"/"}

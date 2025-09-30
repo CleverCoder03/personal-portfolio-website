@@ -4,6 +4,7 @@ import Project from "../components/Project";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Image from "next/image";
+import HeaderTitle from "../components/HeaderTitle";
 
 const WorkPage = () => {
   return (
@@ -11,14 +12,7 @@ const WorkPage = () => {
       id="title"
       className="flex flex-col min-h-screen text-black py-7 px-5 md:py-6 md:px-12 lg:py-10 xl:px-18"
     >
-      <div className="hidden w-full lg:flex justify-center text-xl font-ppneune-medium font-medium md:text-2xl">
-        <div className="w-1/2 inline-flex relative left-[25vw]">
-          <h1 className="w-40 leading-[1]">Currently a Freelacer</h1>
-        </div>
-        <div className="w-1/2">
-          <h1 className="w-40 leading-[1]">Based in Mumbai, India</h1>
-        </div>
-      </div>
+      <HeaderTitle />
 
       <Work />
       <div>
@@ -37,11 +31,11 @@ const WorkPage = () => {
 
         <div className="lg:w-1/2">
           <a href="https://the-og-labs.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <div className="relative w-full h-[45dvh] lg:h-[100dvh]">
+            <div className="relative w-full h-[45dvh] lg:h-[100dvh] overflow-hidden">
               <Image
                 src="/og-labs-cover.jpg"
                 alt="zodius-cover"
-                className="object-cover"
+                className="object-cover transition-all duration-200 hover:scale-110"
                 fill
               />
             </div>

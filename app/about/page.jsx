@@ -4,6 +4,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import ServicesAccordion from "../components/Accordion";
+import HeaderTitle from "../components/HeaderTitle";
 
 const AboutPage = () => {
   return (
@@ -11,14 +12,7 @@ const AboutPage = () => {
       id="title"
       className="flex flex-col min-h-screen py-7 px-5 md:py-6 md:px-12 lg:py-10 xl:px-18"
     >
-      <div className="hidden w-full lg:flex justify-center text-xl font-ppneune-medium font-medium md:text-2xl">
-        <div className="w-1/2 inline-flex relative left-[25vw]">
-          <h1 className="w-40 leading-[1]">Currently a Freelacer</h1>
-        </div>
-        <div className="w-1/2">
-          <h1 className="w-40 leading-[1]">Based in Mumbai, India</h1>
-        </div>
-      </div>
+      <HeaderTitle />
       <About />
       <ServicesAccordion/>
       <section className="mt-52">

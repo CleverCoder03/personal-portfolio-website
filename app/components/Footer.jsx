@@ -1,8 +1,34 @@
-import React from 'react'
+"use client"
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useRef } from 'react'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Footer = ({classname}) => {
+  const footerRef = useRef();
+
+  useGSAP(()=>{
+    if(!footerRef.current) return;
+
+    gsap.from(
+      footerRef.current, {
+        opacity: 0,
+        // y: 50,
+        duration: 1.5,
+        ease: "power3.out",
+        delay: 0.2,
+        scrollTrigger: {
+          trigger: footerRef.current,
+          start: "top bottom",
+          once: true
+        }
+      },  
+    )
+  }, { scope: footerRef })
   return (
-    <section className={`mt-32 text-xl font-ppneune-medium leading-[1.1] lg:flex lg:justify-between lg:items-end lg:mt-[12rem] lg:mb-[3rem] ${classname}`}>
+    <footer ref={footerRef} className={`mt-32 text-xl font-ppneune-medium leading-[1.1] lg:flex lg:justify-between lg:items-end lg:mt-[12rem] lg:mb-[3rem] ${classname}`}>
         <div>
           <h1>Vishal Mishra</h1>
           <h1>Creative Developer</h1>
@@ -34,7 +60,7 @@ const Footer = ({classname}) => {
             </a>
           </h1> */}
         </div>
-      </section>
+      </footer>
   )
 }
 

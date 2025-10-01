@@ -141,12 +141,12 @@ const Project = () => {
 
           <div>
               <div className="mt-15 lg:w-[50vw] lg:mt-[18vh]">
-                  <h1 className="text-2xl lg:text-3xl text-white font-ppneune-medium">{selectedProject?.detailedDesc}</h1>
+                  <h1 className="text-xl lg:text-3xl text-white font-ppneune-medium">{selectedProject?.detailedDesc}</h1>
               </div>
 
-              <h1 className="mt-10 text-gray-300 font-ppneune-medium text-xl underline underline-offset-4 lg:hidden"><a href={selectedProject?.href} target="_blank" rel="noopener noreferrer">Visit live link</a></h1>
+              <h1 className="mt-10 text-gray-300 font-ppneune-medium text-lg underline underline-offset-4 lg:hidden"><a href={selectedProject?.href} target="_blank" rel="noopener noreferrer">Visit live link</a></h1>
 
-              <div className="mt-20 text-white font-ppneune-medium text-xl lg:w-[50vw] lg:mt-[12vh]">
+              <div className="mt-20 text-white font-ppneune-medium text-lg lg:w-[50vw] lg:mt-[12vh]">
                 <h1 className="pb-5 border-b-[0.5] uppercase">Project info</h1>
                 <div>
                   <div className="border-b-[0.5] py-5 flex justify-between">

@@ -10,7 +10,7 @@ const About = () => {
       <div className="text-xl font-ppneune-medium">01/</div>
       <div className="lg:ml-[12vw] lg:w-fit">
         <div className="mt-7 lg:mt-0">
-          <Copy>
+          <Copy delay={0.3}>
             <h1 className="uppercase font-ppneune-medium text-[11.2dvw] leading-[9.8dvw] lg:text-[9dvw] lg:leading-[7.8dvw]">
               Passionate
             </h1>

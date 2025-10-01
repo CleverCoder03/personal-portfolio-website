@@ -17,7 +17,7 @@ const WorkPage = () => {
       <Work />
       <div>
         <Project />
-      <div className="lg:flex lg:items-start lg:mt-20">
+      {/* <div className="lg:flex lg:items-start lg:mt-20">
         <div className="mt-25 lg:w-1/2 lg:mt-0 sticky top-20 lg:top-25">
           <h1 className="uppercase font-ppneune-medium text-[11.2dvw] leading-[1.15] lg:text-[9dvw] lg:leading-[7.8dvw] underline underline-offset-6 decoration-4 lg:decoration-6 w-50">
             <a href="https://the-og-labs.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -41,7 +41,7 @@ const WorkPage = () => {
             </div>
           </a>
         </div>
-      </div>
+      </div> */}
       </div>
       <section className="mt-48">
         <div className="text-xl font-ppneune-medium flex gap-30 lg:justify-between lg:mr-[20vw]">

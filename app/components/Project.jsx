@@ -28,7 +28,16 @@ and a modern, polished UI.`,
     href: "https://vector-mojo.vercel.app",
     name: "Vector Mojo",
     desc: "A web-app designed for introducing different drinks with cool animation.",
-    detailedDesc: `I developed a dynamic website using Next.js, TailwindCSS, and advanced GSAP animations. Key features include scroll-triggered animations, creative text effects with SplitText, video playback sync, and interactive sliders. Overcoming challenges in integrating GSAP with Next.js, this project enhanced my skills in performance, design, and immersive web experiences.`,
+    detailedDesc: `I developed a dynamic web-app using Next.js, TailwindCSS, and advanced GSAP animations. Key features include scroll-triggered animations, creative text effects with SplitText, video playback sync, and interactive sliders. Overcoming challenges in integrating GSAP with Next.js, this project enhanced my skills in performance, design, and immersive web experiences.`,
+    bgColor: "#535e5a",
+  },
+  {
+    id: 3,
+    imgSrc: "/velocity.jpg",
+    href: "https://velocity-studio.vercel.app",
+    name: "Velocity Studio",
+    desc: "Developed this portfolio web-app for a Pune based digital Marketing Agency",
+    detailedDesc: `Built with Next.js, TailwindCSS, GSAP, and Framer Motion, this interactive portfolio highlights the digital marketing agency’s expertise. With fast load times, smooth animations, and a responsive design, it showcases Velocity’s innovative strategies and successful projects. Whether on desktop or mobile, the site offers a seamless, engaging experience.`,
     bgColor: "#535e5a",
   },
 ];
@@ -66,7 +75,7 @@ const Project = () => {
             <div className="mt-25 lg:w-1/2 lg:mt-0 sticky top-20 lg:top-25">
               <h1
                 onClick={() => handleProjectClick(project)}
-                className="uppercase font-ppneune-medium text-[11.2dvw] leading-[1.15] lg:text-[9dvw] lg:leading-[7.8dvw] underline underline-offset-6 decoration-4 lg:decoration-6 w-[50vw] lg:w-[40vw] cursor-pointer"
+                className="uppercase font-ppneune-medium text-[11.2dvw] leading-[1.15] lg:text-[9dvw] lg:leading-[7.8dvw] underline underline-offset-6 decoration-4 lg:decoration-6 w-[56vw] lg:w-[45vw] cursor-pointer"
               >
                 <CharReveal>
                   <a

@@ -1,5 +1,5 @@
 ========================================================
-              VISHAL MISHRA — PORTFOLIO WEBSITE
+VISHAL MISHRA — PORTFOLIO WEBSITE
 ========================================================
 
 👋 ABOUT

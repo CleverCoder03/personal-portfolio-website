@@ -3,7 +3,7 @@ import Copy from "../components/Copy";
 const links = [
   { id: 1, label: "Linkedin", href: "https://www.linkedin.com/in/clever-coder/" },
   { id: 2, label: "Github", href: "https://github.com/CleverCoder03" },
-  { id: 3, label: "Whatsapp", href: "https://wa.me/+917249084224" },
+  { id: 3, label: "X / Twitter", href: "https://x.com/CleverCoder0" },
 ];
 
 const Contact = () => {

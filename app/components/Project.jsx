@@ -40,6 +40,15 @@ and a modern, polished UI.`,
     detailedDesc: `Built with Next.js, TailwindCSS, GSAP, and Framer Motion, this interactive portfolio highlights the digital marketing agency’s expertise. With fast load times, smooth animations, and a responsive design, it showcases Velocity’s innovative strategies and successful projects. Whether on desktop or mobile, the site offers a seamless, engaging experience.`,
     bgColor: "#535e5a",
   },
+  {
+    id: 4,
+    imgSrc: "/venus.jpg",
+    href: "https://venus-studio.vercel.app",
+    name: "Creative Studio",
+    desc: "Developed this portfolio web-app for a Fictional Creative Agency",
+    detailedDesc: `Built with Next.js, TailwindCSS, GSAP, and Framer Motion, this interactive portfolio website showcases the creativity and visual identity of Venus Studio. With smooth parallax effects, elegant animations, and a responsive design, it delivers a seamless experience across all devices - reflecting the studio’s artistic vision and modern approach to digital design.`,
+    bgColor: "#535e5a",
+  },
 ];
 
 const Project = () => {

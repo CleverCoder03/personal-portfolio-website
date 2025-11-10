@@ -8,7 +8,7 @@ const links = [
 
 const Contact = () => {
   return (
-    <div>
+    <div className="py-7 px-5 md:py-6 md:px-12 lg:py-10 xl:px-18">
       <div className="text-center text-white my-[25vh]">
         <div className="flex flex-col justify-center items-center gap-8">
           <h2 className="text-xl font-ppneune-medium uppercase">
@@ -17,7 +17,7 @@ const Contact = () => {
           <a href="mailto:clevercoder0307@gmail.com" target="_blank" rel="noopener noreferrer">
             <Copy>
               <h1
-              className={`uppercase font-ppneune-medium text-[11.2dvw] leading-[1.18] lg:text-[9dvw] lg:leading-[1] underline underline-offset-6 decoration-3 lg:decoration-6 w-[60vw] lg:w-[100vw]`}
+              className={`uppercase font-ppneune-medium text-[11.2dvw] leading-[1.18] lg:text-[9dvw] lg:leading-[1] underline underline-offset-6 decoration-3 lg:decoration-6 w-[60vw] lg:w-[95vw]`}
             >
               Connect with me @ vishal mishra
             </h1>

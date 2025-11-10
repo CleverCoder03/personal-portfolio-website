@@ -42,8 +42,8 @@ const Footer = ({classname}) => {
             Github,
           </a>
           &nbsp;
-          <a href="https://wa.me/+917249084224" target="_blank" rel="noopener noreferrer">
-            Whatsapp
+          <a href="https://x.com/CleverCoder0" target="_blank" rel="noopener noreferrer">
+            X
           </a>
         </div>
         <div className="mt-10 mb-5 lg:mt-0 lg:mb-0">

@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import LenisScrollProvider from "./components/LenisScrollProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,6 +83,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <LenisScrollProvider>{children}</LenisScrollProvider>
           <SpeedInsights />
+          <Analytics />
       </body>
     </html>
   );

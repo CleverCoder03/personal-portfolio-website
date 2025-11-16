@@ -55,7 +55,7 @@ Portfolio: https://vishalmishra.vercel.app
 🧠 AUTHOR
 Vishal Mishra  
 BSc IT Graduate (2025)  
-Full-Stack Developer | React.js | Next.js | Node.js | MERN Stack  
+Web Developer | React.js | Next.js | Node.js |
 Passionate about Web Development, Networking, and AI Innovation.
 
 --------------------------------------------------------

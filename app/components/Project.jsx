@@ -3,6 +3,7 @@ import Image from "next/image";
 import Copy from "./Copy";
 import CharReveal from "./CharReveal";
 import { useEffect, useState } from "react";
+import { LucideLink } from "lucide-react";
 
 const projects = [
   {
@@ -143,8 +144,9 @@ const Project = () => {
                   href={selectedProject?.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="underline underline-offset-6 decoration-3 flex items-center gap-2"
                 >
-                  Visit live link
+                 <LucideLink className="size-4 lg:size-5" />  Visit live link 
                 </a>
               </h1>
               <h1>{selectedProject?.name}</h1>

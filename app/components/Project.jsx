@@ -12,15 +12,7 @@ const projects = [
     href: "https://zodius.vercel.app",
     name: "Zodius",
     desc: "A web-app designed for gaming portfolio with loads of animation.",
-    detailedDesc: `Zodius is a sleek, cosmic-themed
-web app built with Next.js and
-Tailwind CSS, featuring smooth
-GSAP animations and a
-mobile-first, responsive design.
-Optimized for performance and
-deployed on Vercel, this project
-showcases modular components
-and a modern, polished UI.`,
+    detailedDesc: `Zodius is a sleek, cosmic-themed web app built with Next.js and Tailwind CSS, featuring smooth GSAP animations and a mobile-first, responsive design. Optimized for performance and deployed on Vercel, this project showcases modular components and a modern, polished UI.`,
     bgColor: "#535e5a",
   },
   {
@@ -48,6 +40,15 @@ and a modern, polished UI.`,
     name: "Creative Studio",
     desc: "Developed this portfolio web-app for a Fictional Creative Agency",
     detailedDesc: `Built with Next.js, TailwindCSS, GSAP, and Framer Motion, this interactive portfolio website showcases the creativity and visual identity of Venus Studio. With smooth parallax effects, elegant animations, and a responsive design, it delivers a seamless experience across all devices - reflecting the studio’s artistic vision and modern approach to digital design.`,
+    bgColor: "#535e5a",
+  },
+  {
+    id: 5,
+    imgSrc: "/vertex.jpg",
+    href: "https://vertex-real-estate-agency.vercel.app/",
+    name: "Vertex",
+    desc: "Developed this portfolio web-app for a Fictional Real Estate Agency",
+    detailedDesc: `Built with Next.js, TailwindCSS, and deployed on Vercel, this modern real estate agency website combines simplicity with performance. The clean, minimal design focuses on delivering a distraction-free experience, allowing the visuals and messaging to shine. Fully responsive and smooth, seamless user experience across all devices, establishing a strong, purposeful digital presence for the agency.`,
     bgColor: "#535e5a",
   },
 ];

@@ -24,7 +24,7 @@ const HeaderTitle = ({contact}) => {
       className="hidden w-full lg:flex justify-center text-xl font-ppneune-medium font-medium md:text-2xl"
     >
       <div className="w-1/2 inline-flex relative left-[25vw]">
-        <h1 className={`w-40 leading-[1] ${contact && "text-white"}`}>Currently a Freelancer</h1>
+        <h1 className={`w-40 leading-[1] ${contact && "text-white"}`}>Learner / Creator</h1>
       </div>
       <div className="w-1/2">
         <h1 className={`w-40 leading-[1] ${contact && "text-white"}`}>Based in Mumbai, India</h1>

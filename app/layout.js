@@ -117,7 +117,6 @@ export default function RootLayout({ children }) {
         <LenisScrollProvider>{children}</LenisScrollProvider>
         <SpeedInsights />
         <Analytics />
-        <GoogleAnalytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

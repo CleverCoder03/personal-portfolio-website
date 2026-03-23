@@ -6,6 +6,19 @@ import Contact from "../components/Contact";
 import Image from "next/image";
 import HeaderTitle from "../components/HeaderTitle";
 
+export const metadata = {
+  title: "Portfolio Projects | Vishal Mishra Web Developer",
+  description:
+    "Explore web development projects by Vishal Mishra, including portfolio websites, business sites, and modern UI/UX builds using Next.js and React.",
+
+  keywords: [
+    "Web Developer Portfolio Projects",
+    "Next.js Projects",
+    "React Portfolio",
+    "Frontend Work Examples",
+  ],
+};
+
 const WorkPage = () => {
   return (
     <main

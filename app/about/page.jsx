@@ -6,6 +6,22 @@ import Project from "../components/Project";
 import ServicesAccordion from "../components/Accordion";
 import HeaderTitle from "../components/HeaderTitle";
 
+export const metadata = {
+  title: "About Vishal Mishra | Web Developer & Designer",
+  description:
+    "Learn more about Vishal Mishra, a freelance web developer skilled in Next.js, React, Tailwind CSS, and creating high-performance, modern websites.",
+
+  keywords: [
+    "About Vishal Mishra",
+    "Web Developer Background",
+    "Frontend Developer India",
+    "Next.js Developer Profile",
+    "Website developer Mumbai",
+    "Freelance Website developer Mumbai",
+    "Freelance web-app developer Mumbai",
+  ],
+};
+
 const AboutPage = () => {
   return (
     <main

@@ -2,6 +2,21 @@ import Contact from "../(landingPage)/Contact";
 import Footer from "../components/Footer";
 import HeaderTitle from "../components/HeaderTitle";
 
+export const metadata = {
+  title: "Contact Vishal Mishra | Hire Web Developer",
+  description:
+    "Get in touch with Vishal Mishra for freelance web development projects. Available for building modern, high-performance websites and UI experiences.",
+
+  keywords: [
+    "Hire Web Developer India",
+    "Contact Vishal Mishra",
+    "Freelance Developer Contact",
+    "Website developer Mumbai",
+    "Freelance Website developer Mumbai",
+    "Freelance web-app developer Mumbai",
+  ],
+};
+
 const ContactPage = () => {
   return (
     <main

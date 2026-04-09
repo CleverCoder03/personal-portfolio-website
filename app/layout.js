@@ -119,23 +119,67 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Vishal Mishra",
-              url: "https://mishravishal.in",
-              sameAs: [
-                "https://github.com/CleverCoder03",
-                "https://www.linkedin.com/in/clever-coder/",
-                "https://x.com/CleverCoder0",
-                "https://www.instagram.com/clevercoder_/",
-              ],
-              jobTitle: "Freelance Website Developer",
-              worksFor: {
-                "@type": "Organization, small business",
-                name: "Freelance",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Vishal Mishra",
+                url: "https://mishravishal.in",
+                image: "https://avatars.githubusercontent.com/u/82864194?v=4",
+                sameAs: [
+                  "https://github.com/CleverCoder03",
+                  "https://www.linkedin.com/in/clever-coder/",
+                  "https://x.com/CleverCoder0",
+                  "https://www.instagram.com/clevercoder_/",
+                ],
+                jobTitle: "Freelance Web Developer",
+                worksFor: {
+                  "@type": "Organization",
+                  name: "Freelance",
+                },
+                knowsAbout: [
+                  "React.js",
+                  "Next.js",
+                  "Node.js",
+                  "MERN Stack",
+                  "GSAP Animations",
+                  "Framer Motion",
+                  "SEO Optimization",
+                  "Web Performance",
+                ],
               },
-            }),
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Vishal Mishra Portfolio",
+                url: "https://mishravishal.in",
+                description:
+                  "Portfolio of Vishal Mishra, freelance web developer building modern, scalable and SEO-optimized websites.",
+                publisher: {
+                  "@type": "Person",
+                  name: "Vishal Mishra",
+                },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                serviceType: "Web Development",
+                provider: {
+                  "@type": "Person",
+                  name: "Vishal Mishra",
+                },
+                areaServed: {
+                  "@type": "Place",
+                  name: "Worldwide",
+                },
+                description:
+                  "Freelance web development services including custom website development, SEO optimization, performance optimization, and deployment.",
+                offers: {
+                  "@type": "Offer",
+                  availability: "https://schema.org/InStock",
+                },
+              },
+            ]),
           }}
         />
       </body>
